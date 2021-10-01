@@ -7,7 +7,24 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/components/pages/Home')
+    component: () => import('@/components/pages/Home'),
+    children: [
+      {
+          path: 'closet',
+          component: () => import('@/components/closet/index'),
+          name: 'closet'
+      },
+      {
+        path: 'coordination',
+        component: () => import('@/components/coordination/index'),
+        name: 'coordination'
+    },
+    {
+      path: 'mypage',
+      component: () => import('@/components/mypage/index'),
+      name: 'mypage'
+  },
+    ]
   },
   {
     path: '/auth',
