@@ -10,9 +10,15 @@ const routes = [
     component: () => import('@/components/pages/Home'),
     children: [
       {
-          path: 'closet',
-          component: () => import('@/components/closet/index'),
-          name: 'closet'
+        path: 'closet',
+        component: () => import('@/components/closet/index'),
+        name: 'closet'
+      },
+      {
+        path: 'clothes',
+        component: () => import('@/components/closet/list'),
+        props: true,
+        name: 'clothes',
       },
       {
         path: 'coordination',
