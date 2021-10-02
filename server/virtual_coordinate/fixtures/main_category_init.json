@@ -1,0 +1,34 @@
+[
+	{
+		"model": "virtual_coordinate.MainCategory",
+		"pk": 1,
+		"fields": {
+			"name": "トップス", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+	{
+		"model": "virtual_coordinate.MainCategory",
+		"pk": 2,
+		"fields": {
+			"name": "ボトムス", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+	{
+		"model": "virtual_coordinate.MainCategory",
+		"pk": 3,
+		"fields": {
+			"name": "アウター", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+	{
+		"model": "virtual_coordinate.MainCategory",
+		"pk": 4,
+		"fields": {
+			"name": "その他", 
+			"icon": "mdi-tie"
+		}
+	}
+]

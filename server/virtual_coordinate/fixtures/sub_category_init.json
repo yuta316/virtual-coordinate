@@ -1,0 +1,146 @@
+[
+	{
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 1,
+			"name": "Tシャツ", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 1,
+			"name": "シャツ", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 1,
+			"name": "ポロシャツ", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 1,
+			"name": "ニット", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 1,
+			"name": "スウェット", 
+			"icon": "mdi-tshirt-crew-outline"
+		}
+	},
+	{
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 2, 
+			"name": "デニム", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 2,
+			"name": "チノパン", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 2,
+			"name": "コーデュロイ", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 2,
+			"name": "ショート", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 2,
+			"name": "スカート", 
+			"icon": "mdi-shoe-cleat"
+		}
+	},
+	{
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "ベスト", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "コート", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "ナイロンジャケット", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "フリース", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "ライトアウター", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+            "main_category": 3,
+			"name": "ブルゾン", 
+			"icon": "mdi-coat-rack"
+		}
+	},
+	{
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+			"main_category": 4,
+            "name": "ネクタイ", 
+			"icon": "mdi-tie"
+		}
+	},
+    {
+		"model": "virtual_coordinate.SubCategory",
+		"fields": {
+			"main_category": 4,
+            "name": "帽子", 
+			"icon": "mdi-tie"
+		}
+	}
+]

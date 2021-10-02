@@ -1,4 +1,4 @@
-# virtual_cordinate_front
+# client
 
 ## Project setup
 ```

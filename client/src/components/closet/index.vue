@@ -7,9 +7,9 @@
 		<v-row>
 			<v-col
 				cols="6"
-				v-for="(clothing, i) in clothes"
-				:key="i"
-				@click="toCategory(i)"
+				v-for="clothing in clothes"
+				:key="clothing.id"
+				@click="toCategory(clothing.id)"
 			>
 				<v-avatar
 					tile
@@ -24,42 +24,49 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
 	name: 'Closet',
 	data() {
 		return {
 			status: 'top',
-			clothes: [
-				{name: 'トップス', icon: 'mdi-tshirt-crew-outline',
-				categoris: [
-					{name: 'Tシャツ', icon: 'mdi-tshirt-crew-outline'},
-					{name: 'シャツ', icon: 'mdi-tshirt-crew-outline'},
-					{name: 'ポロシャツ', icon: 'mdi-tshirt-crew-outline'},
-					{name: 'ニット', icon: 'mdi-tshirt-crew-outline'},
-					{name: 'スウェット', icon: 'mdi-tshirt-crew-outline'},
-				]},
-				{name: 'ボトムス', icon: 'mdi-shoe-cleat' },
-				{name: 'アウター', icon: 'mdi-coat-rack ' },
-				{name: 'その他', icon: 'mdi-tie' },
-			]
+			mainCategories: [],
+			subCategories: [],
+			clothes: []
 		}
 	},
 	methods: {
-		toCategory(e) {
+		toCategory(id) {
 			if (this.status == 'top') {
-				this.clothes = this.clothes[e].categoris;
+				this.clothes = this.subCategories.filter((sub) => {
+					return sub.main_category_id === id
+				});
 				this.status = 'middle';
 			} else {
+				var category = this.clothes.filter((data) => {
+						return data.id === id })[0]
 				this.$router.push({
 					name: 'clothes',
-					params: { category: this.clothes[e] }
+					params: { category: category }
 				})
 			}
 		},
 		back() {
 			this.status = 'top'
+			this.clothes = this.mainCategories;
+		},
+		getCategories() {
+			axios.get('http://127.0.0.1:8005/vc/get_cate')
+				.then((res) => {
+					this.mainCategories = res.data.main_cate;
+					this.subCategories = res.data.sub_cate;
+					this.clothes = this.mainCategories;
+				})
 		}
-
+	},
+	mounted() {
+		this.getCategories()
 	}
 }
 </script>

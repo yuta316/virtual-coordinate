@@ -1,5 +1,7 @@
 <template>
 	<div>
+
+		{{category}}
 		<v-icon>{{ category.icon }}</v-icon>{{ category.name }}
 		<v-row>
 			<v-col :cols="4">
@@ -30,7 +32,7 @@
 export default {
 	name: 'ClothesList',
 	props: {
-		category: Object,
+		category: Array,
 	}
 }
 </script>
