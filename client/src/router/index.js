@@ -35,7 +35,7 @@ const routes = [
   {
     path: '/auth',
     name: 'Auth',
-    component: () => import('@/components/pages/Auth')
+    component: () => import('@/components/auth/index')
   }
 ]
 

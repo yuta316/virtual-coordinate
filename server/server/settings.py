@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'virtual_cordinate',
+    'virtual_coordinate',
 ]
 
 REST_FRAMEWORK = {
